@@ -15,7 +15,7 @@ public class Soup implements Listener {
 
         if(p.getInventory().getItemInMainHand().getType() == Material.MUSHROOM_STEW) {
             if(p.getHealth()<p.getMaxHealth()){
-                double health = p.getHealth() * 3.5;
+                double health = p.getHealth() + 3.5;
                 if(health > p.getMaxHealth()){
                     health = p.getMaxHealth();
                 }
